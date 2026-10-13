@@ -1,33 +1,51 @@
 # Toy | Enterprise AI & LLM Solutions
 
-Building practical AI solutions that connect language models with enterprise systems, business data, and operational workflows.
+**Turning enterprise IT challenges into practical AI solutions — from local LLM deployment to ERP integration and workflow automation.**
 
-My background is in enterprise IT management and system integration. I focus on enterprise AI and local LLMs through requirements definition, architecture planning, solution selection, and evaluation.
+My background is in enterprise IT management and system integration. I lead requirements definition, solution selection, architecture direction, and engineering decisions, working with AI coding agents on implementation and reviewing results against acceptance criteria.
 
-I guide iterative development with Claude Code and Codex, reviewing results and engineering trade-offs. AI coding agents support implementation and documentation, with responsibilities recorded in each project.
+以企業 IT 與系統整合經驗為基礎，將 AI 方案落實到可驗證的工程案例。我的角色是需求、方案與架構決策，以及 AI Agent 協作與成果驗收。
 
-以企業 IT 管理與系統整合經驗為基礎，我關注 AI 如何融入實際工作流程。與 AI Coding Agents 協作時，清楚區分我的需求與方案決策、Agent 實作，以及人工驗證與結果審閱。
+## Featured Projects
 
-## Focus
+Published engineering case studies, with maturity labels describing the underlying systems.
 
-- **Enterprise AI Solution Architecture** — requirements, system boundaries, and engineering trade-offs.
-- **Local LLM Deployment & Evaluation** — model adaptation, inference constraints, and evidence-based assessment.
-- **Enterprise System Integration** — connecting AI capabilities with existing systems and workflows.
-- **AI Agents & Workflow Automation** — tool use, operational reliability, and human review.
-- **AI-Assisted Engineering** — human-directed experiments, implementation support, and documented limitations.
+### [Enterprise ERP AI Agent](https://github.com/Toy-Lab-Re/enterprise-erp-ai-agent)
 
-## Featured Project
+Natural-language access to official ERP Web Services through **18 read-only Tool functions**, with parameter validation and bounded results. **17/17 archived fixed tests reported passing**.
 
-### [Qwen 27B Domain Adaptation on DGX Spark](https://github.com/Toy-Lab-Re/qwen-27b-domain-qlora)
+**Read-only POC** — write and approval actions remain incomplete.
 
-An experimental engineering case study of domain QLoRA on a single **NVIDIA DGX Spark / GB10**, covering **Qwen 27B**, **ModelOpt NVFP4**, and **SGLang / DFlash2** inference experiments.
+### [DGX Spark LLM Journey](https://github.com/Toy-Lab-Re/dgx-spark-llm-journey)
 
-The case study documents engineering decisions around training-data quality, loss masking, and hardware constraints, alongside model evaluation and inference tests. Results retain their test conditions and limitations; QLoRA adaptation and inference optimization are assessed separately.
+Inference engineering on NVIDIA DGX Spark / GB10: **six public LLM checkpoints and ten launched Model × Runtime configurations**. Covers vLLM, SGLang, DFlash2, MTP, NVFP4, and measurement pitfalls.
 
-**Workflow:** I defined requirements, selected approaches, and reviewed reported results. Claude Code handled most implementation, training, environment configuration, and debugging; Codex supported evidence review and portfolio documentation.
+**Engineering case study / POC deployments** — single-stream observations; ten launches are not ten complete benchmark comparisons.
 
-**Status:** Adopted Candidate for internal trial, without formal Production Promotion approval. This is not a Production Release. The public repository contains de-identified technical documentation.
+### [Qwen 27B Domain QLoRA](https://github.com/Toy-Lab-Re/qwen-27b-domain-qlora)
 
-## Areas of Interest
+NVFP4 domain adaptation with loss masking and teacher traces, separating training from serving. Small Golden Set checks explore model behavior and the cost of deeper analysis.
 
-Exploring ERP AI assistants, IT service management automation, and security intelligence workflows. These are areas of interest, not additional completed public projects.
+**v0.5 Adopted Candidate for internal trial** — no Production Promotion or general accuracy claim.
+
+## Additional Projects
+
+- **[LINE ITSM AI Bot](https://github.com/Toy-Lab-Re/line-itsm-ai-bot)** — LINE Messaging API, FastAPI, and a local LLM for issue triage and ticket workflows. **51 messages / 22 tickets** in archived records, with failure analysis and reliability limits. **Internal pilot**; weekly knowledge consolidation remains unverified end to end.
+- **[AI-Assisted Security Advisory Digest](https://github.com/Toy-Lab-Re/security-intelligence-ai)** — Public-advisory classification and two audience-specific drafts for human review; one successful manual run recorded. **POC + Future Design Study**; scheduling is unverified, and Log, EDR, and SOC capabilities are not implemented.
+
+## Technical Focus
+
+- **Enterprise AI Integration** — tool boundaries, validated business parameters, deterministic data handling, and integration with existing systems.
+- **Local LLM Inference & Evaluation** — runtime selection, precision and memory trade-offs, model adaptation, and evidence-aware measurement.
+- **AI Workflow Automation** — contextual triage, bounded processing, human review, and explicit recovery and reliability limits.
+- **AI-Assisted Engineering & Architecture Governance** — clear responsibilities, scoped changes, recorded decisions, and acceptance criteria.
+
+## My Role & AI-Assisted Development
+
+**Human-Directed, AI-Assisted Engineering.** I guide requirements, solution choices, engineering direction, test evaluation, and acceptance.
+
+Claude Code performed most hands-on development, deployment, model experiments, testing, and debugging. Codex supported evidence review, documentation, and portfolio management; historical infrastructure attribution is qualified in the DGX Spark case study. Each project documents its responsibilities and evidence limits.
+
+## Contact
+
+[GitHub · Toy-Lab-Re](https://github.com/Toy-Lab-Re)
